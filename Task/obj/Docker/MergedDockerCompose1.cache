@@ -1,0 +1,59 @@
+name: dockercompose17524979858433594223
+services:
+  task:
+    build:
+      context: /Users/pom-user/Projects/Task
+      dockerfile: Task/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Task
+      target: base
+    container_name: Task
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: task:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/Task.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: /Users/pom-user/Projects/Task/Task
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/pom-user/Projects/Task
+      target: /src
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/pom-user/vsdbg/vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/pom-user/.nuget/packages/
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose17524979858433594223_default

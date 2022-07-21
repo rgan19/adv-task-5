@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{869CCCAB-A491-4521-810D-291F63D2DBA3}|Default">
+  <MonoDevelop.Ide.ItemProperties.TaskProcessor PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TaskProcessor/Startup.cs">
+    <Files>
+      <File FileName="TaskProcessor/Controllers/TaskProcessorController.cs" Line="47" Column="64" />
+      <File FileName="TaskProcessor/Model/TaskDbContext.cs" Line="20" Column="1" />
+      <File FileName="TaskProcessor/Properties/launchSettings.json" Line="42" Column="4" />
+      <File FileName="TaskProcessor/Startup.cs" Line="36" Column="97" />
+      <File FileName="TaskProcessor/Dockerfile" Line="16" Column="35" />
+      <File FileName="TaskProcessor/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TaskProcessor" expanded="True">
+            <Node name="TaskProcessor" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/pom-user/Projects/TaskProcessor/TaskProcessor/Model/TaskDbContext.cs" relfile="TaskProcessor/Model/TaskDbContext.cs" line="13" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>

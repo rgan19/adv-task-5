@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{6E4F434B-EA5C-40B1-A17C-1E7418B6A52F}|Default">
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Task PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Task/Models/Task.cs">
+    <Files>
+      <File FileName="Task/Controllers/TaskController.cs" Line="45" Column="1" />
+      <File FileName="Task/Models/TaskDBContext.cs" Line="16" Column="37" />
+      <File FileName="Task/Startup.cs" Line="57" Column="31" />
+      <File FileName="docker-compose.yml" Line="1" Column="1" />
+      <File FileName="Task/Dockerfile" Line="6" Column="12" />
+      <File FileName="Task/Properties/launchSettings.json" Line="38" Column="32" />
+      <File FileName="Task/Models/Task.cs" Line="42" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Task" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="Task" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Task.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>
