@@ -1,16 +1,17 @@
 # Adv Task 5
 
 
-SAGA Pattern from microservices.io
+SAGA Pattern from [microservices.io](https://microservices.io/patterns/data/saga.html)
 
 ![Image](https://chrisrichardson.net/i/sagas/Create_Order_Saga.png)
 
 
 ### Create task
-For task producer (project name: Task), use docker image `rgan19/task-producer:2.0.0`
+- For task producer (project name: Task), use docker image `rgan19/task-producer:2.0.0`
+- After running `producer-deploy.yaml`, type this into url: http://localhost:31500/swagger/index.html
+- Create a task in `task` queue - orders are tracked by taskID using POST request
 
-- Create a task in `task` queue - orders are tracked by taskID
-
+Sample Request
 ```
 {
     "taskID": 1001,
